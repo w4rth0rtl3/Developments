@@ -8,7 +8,9 @@ int main(){
     
 
     for(i = 1; i <= 30; i++){
-        printf("Digite a %d nota: ", i); fflush(stdin); scanf("%d", &notas[i]);
+        printf("Digite a %d nota: ", i); 
+        fflush(stdin); 
+        scanf("%d", &notas[i]);
     }
 
     printf("\n\n");
