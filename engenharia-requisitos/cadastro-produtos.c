@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-//tipo_produto, nome_produto, quantidade_produto
+//tipo_produto, nome_produto, quantidade_produto, validade_produto
 
 int main(){
 	
@@ -19,6 +19,12 @@ int main(){
 	fflush(stdin);
 	fgets(nome_produto, 50, stdin);
 
+    //validade_produto
+    char validade_produto[10];
+	printf("Numeros do cartao: ");
+	fflush(stdin);
+	fgets(validade_produto[0], 10, stdin);
+	
 
 	// quantidade_produto
 	int quantidade_produto;
@@ -27,12 +33,14 @@ int main(){
 	scanf("%d", &quantidade_produto);
 	
 	
-	
+    
 
 	printf("\n\n");
 	printf("tipo_produto: %s", tipo_produto);
 	printf("nome_produto: %s", nome_produto);
 	printf("quantidade_produto: %d\n", quantidade_produto);
+	
+    printf("validade_produto: %d\n", validade_produto);
 	
 	
 }
