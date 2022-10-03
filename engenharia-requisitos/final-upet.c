@@ -8,7 +8,7 @@ void vendaProdutos();
 void servicos();
 
 int main(){	
-    // Pega a acao do operador
+    // Pega a acao do operador=
     int acao;   
     printf("O que deseja fazer?\n\t1 - Cadastrar cliente(s) e animal(is)\n\t2 - Acessar servicos\n\t3 - Comprar produtos\n\t4 - Cadastrar produtos\n> ");
     fflush(stdin);
