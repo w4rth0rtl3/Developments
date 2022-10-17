@@ -33,6 +33,8 @@ int main(){
             }
             if(notas[i][j] < menor){
                 menor = notas[i][j];
+
+                
                 if(j == 0){
                     menor1++;
                 }
