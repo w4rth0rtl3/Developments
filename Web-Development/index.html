@@ -7,15 +7,29 @@
         <b>modificação</b>
         
         <p>
-            <script>
-                var variavel1 = 1;
-                document.write (typeof variavel1 + "<br>");
+            <script type="text/javascript">
+                variavel = 1;
+                document.write (typeof variavel + "<br>");
 
-                var variavel2 = "2";
-                document.write (typeof variavel2 + "<br>");
+                variavel = "2";
+                document.write (typeof variavel + "<br>");
 
-                var variavel3 = true;
-                document.write (typeof variavel3 + "<br>");
+                variavel = true;
+                document.write (typeof variavel + "<br>");
+                variavel = 4.0;
+                document.write (typeof variavel + "<br>"); 
+
+                var nome = prompt("Digite seu nome: ", 'aqui: ');
+                alert("nome: " + nome);
+
+                document.write(nome + " acessou a pagina");
+
+                anoAtual = 2023;
+                anoNasimento = prompt("Em que ano você nasceu ?: ");
+                
+                idade = anoAtual - anoNasimento;
+                
+                document.write("<br>" + "A idade do " + nome + " é " + idade);
 
             </script>
         </p>
