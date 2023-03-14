@@ -77,6 +77,9 @@ int main(){
     fflush(stdin);
     scanf("%d", &tot_alunos);
 
+    // VAMOS CONVERSAR PROF, DEPOIS DOS PROJETOS E APRENDI QUE O LANCE E USAR O DO WHILE PARA ESSES CASOS DE ATE X NUMEROS 
+    //
+
     for(i = 0; i < tot_alunos; i++){ /*todo for será baseado no tot_alunos inserido anteriormente ao inves de varrer toda a matriz*/
         for(j = 0; j < 2; j++){
             
