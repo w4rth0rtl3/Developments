@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+    </head>
+
+    <script>
+        function Soma(){
+            var num1 = parseInt(document.getElementById("v1").value);
+            var num2 = parseInt(document.getElementById("v2").value);
+
+            final = num1 + num2;
+            document.getElementById("res").innerHTML = "Resposta: " +  "<b>" +  final + "</b>";
+            return final;
+        }
+    </script>
+
+    <body>
+        Digite dois numeros: <br><br>
+        <input type="text" id="v1"><br><br>
+        <input type="text" id="v2"><br><br>
+
+
+        <button type="button" onclick="Soma()">Somar</button>
+
+        <p id="res">Resposta: </p>
+
+    </body>
+</html>

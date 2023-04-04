@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+    </head>
+
+    <body>
+
+        <script>
+            var user = prompt("Digite o usuario");
+            var senha = prompt("Digite a senha");
+
+            const senhaReal = "senha";
+            const usuarioReal = "login";
+
+            if(user == usuarioReal && senha == senhaReal){
+                document.write("Login realizado com sucesso");
+            } else {
+                document.write("Login invalido");
+            }
+
+        </script>
+    </body>
+</html>
