@@ -11,6 +11,7 @@
 
             final = num1 + num2;
             document.getElementById("res").innerHTML = "Resposta: " +  "<b>" +  final + "</b>";
+            document.getElementById("outraSaida").innerHTML = "Resposta:" + final + "."; 
             return final;
         }
     </script>
@@ -21,8 +22,9 @@
         <input type="text" id="v2"><br><br>
 
 
-        <button type="button" onclick="Soma()">Somar</button>
+        <button type="button" onclick="Soma()">Somar</button><br>
 
+        <textarea id="outraSaida" name="story" rows="5" cols="33"></textarea><br>
         <p id="res">Resposta: </p>
 
     </body>

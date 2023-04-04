@@ -1,0 +1,30 @@
+<!DOCTYPE htlm>
+<html>
+    <head>
+        <title>converção</title>
+    </head>
+
+    <script>
+
+        function Converter(){
+
+            var valorFah = parseFloat(document.getElementById("tempF").value);
+
+            var valorFah = (valorFah - 32) * 0.5556;
+
+            document.getElementById("celcius").innerHTML = "Em grau celcius a temperatura é: " + valorFah;
+        }
+
+    </script>
+
+    <body>
+
+        <p>Digite a temperatura em Fahrenheit:</p><br>
+        <input type="text" id="tempF"><br>
+        <button type="button" onclick="Converter()">Converter</button><br>
+
+        Em grau celcius a temperatura é: 
+        <p id="celcius"> </p>
+
+    </body>
+</html>
