@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Pessoa(){
+            return {
+                nome:"Pablo",
+                sobrenome:"Escobar"
+            }
+        }
+
+
+        var X = Pessoa();
+        document.write(X.nome);
+        document.write("<br>");
+        document.write(X.sobrenome);
+
+        function Produto(nome, preco, desconto){
+
+            alert("funcao executou");
+
+            function calcPrecoFinal(preco, desconto){
+
+                if(desconto >= 0 && desconto <= 100){
+                    return(preco * (1 - desconto / 100));
+
+                }
+                else{
+                    desconto = prompt("Desconto invalido, digite outro valor:");
+                    return(preco * (1 - desconto / 100));
+                    //return("O desconto devia estar entre 0% e 100%");
+                }
+            }    
+
+            return{
+                nome,
+                preco,
+                valor: calcPrecoFinal(preco, desconto)
+            }
+        }
+
+        var Y = Produto("Desifetante", 9.80, 115);
+
+        document.write("<br>", Y.nome, " ", Y.preco, " ", Y.valor);
+
+    </script>
+
+</body>
+</html>

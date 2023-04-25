@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Função CallBack</title>
+    </head>
+
+    <body>
+        <script>
+
+            function g(nome){
+                alert("Olá " + nome + " seja bem vindo !");
+            }
+
+            function nome(callback){
+                var nome = prompt("Digite seu nome:");
+                callback(nome);                
+            }
+
+            nome(g);
+
+        </script>
+
+    </body>
+</html>

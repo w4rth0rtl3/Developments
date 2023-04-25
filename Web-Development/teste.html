@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPF</title>
+    </head>
+
+    <body>
+
+        <script>
+
+           document.write(isNaN("a"));
+            
+            document.write(isNaN("2"));
+            
+            document.write(isNaN("-"));
+
+           document.write(isNaN("."));
+
+            function ValidarCPF(){
+                var cpf = document.getElementById("cpf").value;
+                alert(cpf);
+                document.getElementById("resultado").innerHTML = "resultado eh " + cpf + "<br>";
+
+                var EhValido = true;
+
+                for(var char of cpf){
+                    if(isNaN(char) == true){
+                        var EhValido = false;
+                        break;
+                    }
+                }
+
+                
+
+                if(EhValido == true){
+                    document.getElementById("resultado").innerHTML = "O cpf: " + cpf + "está valido <br>";
+    
+                } 
+                else{
+                    document.getElementById("resultado").innerHTML = "CPF invalido, digite somente numeros";
+                }
+            }
+        </script>
+
+        <input type="text", id="cpf", name="cpf", placeholder="CPF: ">
+        <button type="button" onclick="ValidarCPF()">Validar</button><br>
+        <p id="resultado"> </p>
+
+
+    </body>
+</html>

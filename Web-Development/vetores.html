@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vetores</title>
+    </head>
+
+    <body>
+        <script>
+
+            var T = [10, 1, 2, 3, 4];
+
+
+            function SomaVetor(vetor){
+
+                var tamanho = vetor.length;
+                var soma = 0;
+                for(var i = 0; i < tamanho; i++){
+                    soma += vetor[i];
+                };
+
+
+                return soma;
+            }
+
+
+            function MediaVetor(vetor){
+
+                var tamanho = vetor.length;
+                var soma = 0;
+                for(var i = 0; i < tamanho; i++){
+                    soma += vetor[i];
+                };
+
+
+                return (soma / tamanho);
+            }
+
+
+            function ImprimeVetor(vetor){
+
+                var tamanho = vetor.length;
+                document.write("O vetor passado tem o tamanho de " + tamanho + "<br>");
+
+
+                for(var i = 0; i < tamanho; i++){
+                    document.write(vetor[i] + "<br>");
+                };
+
+            };
+
+            function MaiorVetor(vetor){
+
+                var tamanho = vetor.length;
+                var maior = vetor[0];
+
+
+                for(var i = 0; i < tamanho; i++){
+                    if(vetor[i] > maior){
+                        maior = vetor[i];
+                    }
+                }
+
+
+                return maior;
+            }
+
+
+            ImprimeVetor(T);
+            document.write("A soma de todos elementos eh: " + SomaVetor(T) + "<br>");
+            
+            document.write("A media aritimeticac de todos elementos eh: " + MediaVetor(T) + "<br>");
+
+
+            var novoVetor = [1337, 89971, 16700, 446, 80, 7, 19, 50];
+            ImprimeVetor(novoVetor);
+
+
+            document.write("O maior elemento do NovoVetor eh: " + MaiorVetor(novoVetor));
+            
+
+        </script>
+    </body>
+</html>

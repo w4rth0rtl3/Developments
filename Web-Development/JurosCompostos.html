@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <table border="0" width="50%">
+            <tr>
+                <td>Capital</td>
+                <td><input type="text" title="capital" id="_capital" onmouseover='style="border-color:#f0ff00"'  onmouseout="style='border-color:gray'"></form></td>
+                
+            </tr>
+
+            <tr>
+                <td>Taxa</td>
+                <td><input type="text", title="taxa" id="_taxa" onmouseover='style="border-color:#f0ff00"' onmouseout="style='border-color:gray'"></td>
+                
+            </tr>
+
+
+            <tr>
+                <td>Prazo</td>
+                <td><input type="text", title="prazo" id="_prazo" onmouseover='style="border-color:#f0ff00"' onmouseout="style='border-color:gray'"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="confirmar", onmouseover='style="background-color:#00ff00"' onclick="CalculaTaxa()" onmouseout="style='background-color:gray'" >
+                        Confirmar
+                    </button>
+                </td>
+            </tr>
+
+            <textarea name="Respota" id="_resposta" cols="10" rows="1"></textarea>
+
+
+        </table>
+
+        <script>
+            function CalculaTaxa(){
+               //alert(1);
+
+                let taxa = Number(_taxa.value)
+                let capital = Number(_capital.value);
+                //var prazo = Number(_prazo.value);
+                var prazo = parseFloat(document.getElementById("_prazo").value);
+
+                var montante = capital * (taxa + taxa) ** prazo;
+
+                //document.write(taxa + " " +  capital + " " +  prazo)
+               // document.write("<br>" + montante)
+                document.getElementById("_resposta").innerHTML = "O montante será de:" + montante;
+            }
+        </script>
+    </body>
+
+</html>
