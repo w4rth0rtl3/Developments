@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Atividade</title>
+    </head>
+    <body>
+        <h1>Teste javascript</h1>
+        <button onclick="imprime()">Clique para ver o texto</button>
+        <p id="resp"></p>
+        
+        <script>
+            function imprime(){
+                document.getElementById("resp").innerHTML = "Ao cliclar no botão acima, esse texto aparece"
+              // document.write();
+            }
+        </script>
+
+        <script>
+            class Retangulo {
+                constructor(altura, largura) {
+                        this.altura = altura;
+                this.largura = largura;
+                }
+
+                // Getter
+
+                get area() {
+                return this.calcArea();
+                }
+
+                    // Method
+
+                calcArea() {
+                return this.altura * this.largura;
+                }
+
+                }
+
+                const quadrado = new Retangulo(10, 10);
+                console.log(quadrado.area);
+
+                function somar(N) {
+                    var total = 0;
+                    for (var x = 0; x < N; x++) {
+                        total += x;
+                    }
+                    return total;
+                } 
+
+                var teste = somar(4);
+                console.log(teste);
+
+
+
+
+
+        </script>
+    
+    </body>
+</html>
